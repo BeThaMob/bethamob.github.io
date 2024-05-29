@@ -1,1 +1,15 @@
 
+.logo {
+            position: relative;
+            text-decoration: none;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight:900;
+            color: rgb(2, 0, 99);
+            font-size: 25px;
+        }
+
+        .logo:active {
+            transition-duration: 100ms;
+            text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            color: rgb(0, 0, 170);
+        }
