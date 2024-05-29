@@ -11,5 +11,5 @@
         .logo:active {
             transition-duration: 100ms;
             text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-            color: rgb(0, 0, 170);
+            color: rgb(255, 255, 255);
         }
