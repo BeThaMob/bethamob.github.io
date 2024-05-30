@@ -9,4 +9,5 @@ Tôi làm website này để thời gian mùa hè không hoang phí
 - chưa học nâng cao
 - javascript: không có tý gì trong đầu
 
+# chưa xong
 có update thêm
