@@ -1,6 +1,6 @@
 # bethamob.github.io
 Tôi làm website này để thời gian mùa hè không hoang phí
-Tổng hợp những thứ giúp mùa hè của tôi thêm phần "khó nhớ":
+- Tổng hợp những thứ giúp mùa hè của tôi thêm phần "khó nhớ":
 # python
 - Vẫn chưa xong phần pure đã học đòi các module khác
 - Rất là mông lung phần loop
