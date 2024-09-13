@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý file và tải lên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .file-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .file-list li {
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button {
+            padding: 5px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        // Danh sách các file trong thư mục _a
+        const files = ['spamgay.py']; // Giả lập danh sách các file
+
+        // Tạo danh sách file trong HTML
+        function createFileList() {
+            const fileList = document.getElementById('fileList');
+            files.forEach(file => {
+                const li = document.createElement('li');
+                li.textContent = file;
+
+                const downloadButton = document.createElement('button');
+                downloadButton.textContent = 'Tải về';
+                downloadButton.onclick = function() {
+                    downloadFile(file);
+                };
+
+                li.appendChild(downloadButton);
+                fileList.appendChild(li);
+            });
+        }
+
+        // Thực hiện tải file
+        function downloadFile(fileName) {
+            const link = document.createElement('a');
+            link.href = `_a/${fileName}`; // Đường dẫn tới tệp trong thư mục _a
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Tạo danh sách khi trang load
+        window.onload = createFileList;
+    </script>
+</head>
+<body>
+    <h1>Danh sách file để tải về</h1>
+
+    <!-- Danh sách file sẽ được tạo động -->
+    <ul id="fileList" class="file-list">
+        <!-- Các file sẽ được thêm vào đây -->
+    </ul>
+
+</body>
+</html>
