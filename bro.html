@@ -66,7 +66,7 @@
         // Thực hiện tải file
         function downloadFile(fileName) {
             const link = document.createElement('a');
-            link.href = `_a/${fileName}`; // Đường dẫn tới tệp trong thư mục _a
+            link.href = `./_a/${fileName}`; // Đường dẫn tới tệp trong thư mục _a
             link.download = fileName;
             document.body.appendChild(link);
             link.click();
